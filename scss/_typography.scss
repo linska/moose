@@ -44,11 +44,9 @@ p {
 
 a {
   font-size: 1.8rem;
-  color: $prime;
   text-decoration: underline;
 
   &:hover {
     text-decoration: none;
-    color: $prime;
   }
 }
