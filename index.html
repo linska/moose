@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Moose</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/pages/home.css">
 </head>
-<body class="hero">
+<body class="hero" id="test1">
     <div class="center block">
         <div class="svgContainerMoose">
         <svg version="1.1" id="Moose" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
@@ -24,7 +25,7 @@
                 .st11{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:2.0441,1.3627;}
                 .st12{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:3.0318,2.0212;}
 
-                .st15{fill:#67563F;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+                .st15{fill:#67563F;stroke:#000000;stroke-width:1;stroke-miterlimit:10;}
                 .st16{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
             </style>
 
@@ -60,7 +61,7 @@
                             type="rotate"
                             from="115 92 95"
                             to="90 92 95"
-                            dur="0.5s"
+                            dur="0.3s"
                             begin="indefinite"
                             repeatCount="1"
                             fill="freeze">
@@ -74,7 +75,7 @@
                             type="rotate"
                             from="90 92 95"
                             to="115 92 95"
-                            dur="0.5s"
+                            dur="0.3s"
                             begin="indefinite"
                             repeatCount="1"
                             fill="freeze">
@@ -90,7 +91,7 @@
                             type="rotate"
                             from="70 118 95"
                             to="90 118 95"
-                            dur="0.5s"
+                            dur="0.3s"
                             begin="indefinite"
                             repeatCount="1"
                             fill="freeze">
@@ -104,7 +105,7 @@
                             type="rotate"
                             from="90 118 95"
                             to="70 118 95"
-                            dur="0.5s"
+                            dur="0.3s"
                             begin="indefinite"
                             repeatCount="1"
                             fill="freeze">
@@ -113,8 +114,8 @@
                 </ellipse>
             </g>
             <g id="pupils">
-	            <ellipse id="pupil_r" cx="116" cy="97" rx="3.62" ry="4.45"/>
-                <ellipse id="pupil_l" cx="93" cy="97" rx="3.62" ry="4.45"/>
+	            <ellipse id="pupil_r" cx="117" cy="97" rx="3.62" ry="4.45"/>
+                <ellipse id="pupil_l" cx="91.5" cy="97" rx="3.62" ry="4.45"/>
             </g>
 
             <g id="r" transform="translate(-25,0)">
@@ -124,7 +125,7 @@
                 <path class="st16" d="M23.44,161.83c0,0-2.86-5.54,0-16.7"/>
             </g>
 
-            <g id="lll" transform="translate(170,0)">
+            <g id="l" transform="translate(170,0)">
 	            <path class="st15" d="M21.56,161.82c0,0,16.6,0.55,21.76-3.51S41.6,137,25.57,137S3.81,148.67,3.81,153.74
 		            C3.81,158.82,10.68,161.77,21.56,161.82z"/>
                 <path class="st16" d="M17.53,159.44c0,0-2.29-8.12,6.87-14.56"/>
@@ -192,25 +193,22 @@
 		            c-4.29,4.82-16.08-0.54-24.92-2.14c-8.84-1.61-25.99-5.09-34.83-4.55s-15.54-0.54-19.56-3.21c-4.02-2.68-1.07-24.11,6.43-28.4
 		            C80.65,40.12,109.05,39.05,109.05,39.05z"/>
             </g>
-
-
-
-
         </svg>
         </div>
 
         <div class="inputGroup center">
-            <div class="loginGroup">
-                <input type="text" id="email" required>
-                <span class="bar"></span>
-                <label>Email</label>
+            <div class="loginGroup rel">
+                <input type="text" id="email" class="inp h4 block" required>
+                <span class="bar rel block"></span>
+                <label class="abs h4">Email</label>
+
             </div>
-            <div class="loginGroup">
-                <input type="text" required>
-                <span class="bar"></span>
-                <label>Password</label>
+            <div class="loginGroup rel">
+                <input type="text" class="inp h4 block" required>
+                <span class="bar rel block"></span>
+                <label class="abs h4">Password</label>
             </div>
-            <button>Login</button>
+            <button class="rel h4">Login</button>
         </div>
 
     <div class="svgContainerLegs center">
@@ -289,6 +287,12 @@
     </div>
 
     </div>
+    <div class="helper abs inl-block h4" id="helper"></div>
+
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
     <script src="./js/build.js"></script>
 </body>
 </html>

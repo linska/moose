@@ -2,51 +2,23 @@ html {
   font-size: 10px; // static size
 }
 
-body {
-  color: black;
-  margin: 0;
-}
 
-// Headings
-// ---------------------------
-.h1, .h2, .h3, .h4, .h6 {
- // font-family: "Merriweather";
+.h1, .h2, .h3, .h4 {
+   font-family: 'Open Sans', sans-serif;
 }
 
 .h1 {
-  font-size:4.8rem;
+  font-size: 4.8rem;
 }
 
 .h2 {
-  font-size: 3.6rem;
+  font-size: 3.4rem;
 }
 
 .h3 {
-  font-size: 2.4rem;
-}
-
-.h4 {
   font-size: 2.2rem;
 }
 
-.h5 {
-
-  font-size: 1.4rem;
-}
-
-.h6 {
-  font-size: 1.4rem;
-}
-
-p {
-  font-size: 1.8rem;
-}
-
-a {
-  font-size: 1.8rem;
-  text-decoration: underline;
-
-  &:hover {
-    text-decoration: none;
-  }
+.h4 {
+  font-size: 2rem;
 }
