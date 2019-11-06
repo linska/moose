@@ -29,7 +29,7 @@ function getcoord(center, focus){
         height : focus.y - center.y
     }
     let angle = RadToDeg( Math.atan(triangle.width/triangle.height));
-    const radius = 8;
+    const radius = 8.5;
     let a = radius * Math.sin(DegToRad(angle));
     let b = radius * Math.cos(DegToRad(angle));
     return {a , b};
@@ -51,7 +51,7 @@ function animate(obj, finish){
     obj.animate({
         cx: fin.a,
         cy: fin.b
-    }, 50);
+    }, 100);
 }
 
 function onfocus () {
@@ -62,8 +62,7 @@ function onfocus () {
 }
 
 $("#email").on("input", function() {
-
-  $("#helper").text($("#email").val());
+  $("#helper").text($(this).val());
   onfocus();
 });
 
@@ -75,9 +74,52 @@ $("#email").on("blur", function () {
     $("#pupil_r").animate({
         cx: 117,
         cy: 97
-    }, 50)
+    }, 50);
+   if ($("#helper").width() === 0){
+       $("#lb1").animate({
+           fontSize: 20,
+           top: 0
+       }, 100)
+   }
 })
 
 $("#email").on("focus", function () {
     onfocus();
+
+    $("#lb1").animate({
+        fontSize: 15,
+        top: -20
+    }, 100)
 })
+
+$("#pass").on("focus", function () {
+    $("#lb2").animate({
+        fontSize: 15,
+        top: -20
+    }, 100)
+})
+
+$("#pass").on("input", function(){
+    $("#helper1").text($("#pass").val());
+})
+
+$("#pass").on("blur", function(){
+    if ($("#helper1").width() === 0){
+        $("#lb2").animate({
+            fontSize: 20,
+            top: 0
+        }, 100)
+    }
+})
+
+
+$('.fas').on('click', function(){
+    $(this).toggleClass('fa-eye');
+    $(this).toggleClass('fa-eye-slash');
+
+    if ($("#pass").attr("type") === "password"){
+        $("#pass").attr("type", "text");}
+    else{
+        $("#pass").attr("type", "password");}
+});
+

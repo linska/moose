@@ -1,5 +1,7 @@
 console.log("start js logic :)");
 
+let email = document.getElementById("email");
+
 function onEmailFocus() {
     document.getElementById("ani-eye_r").beginElement();
     document.getElementById("ani-eye_l").beginElement();

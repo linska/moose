@@ -25,6 +25,10 @@
   text-align: center;
 }
 
+.left {
+  text-align: left;
+}
+
 //-----------------------------
 
 $white:       #FFFFFF;
@@ -34,9 +38,3 @@ $red:         #85272D;
 $green:       #B6CEBF;
 
 //-----------------------------
-
-%trnst{
-  transition: 0.2s ease all;
-  -moz-transition: 0.2s ease all;
-  -webkit-transition: 0.2s ease all;
-}

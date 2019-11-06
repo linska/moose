@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Moose</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0f97eb6b0a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/pages/home.css">
 </head>
 <body class="hero" id="test1">
@@ -160,7 +161,7 @@
 	            c14.2,1.07,11.25-8.57-2.68-29.47s4.55-33.22-4.82-65.1S121.64,26.19,121.64,26.19z" fill='#fff'/>
         </mask>
     </defs>
-            <image xlink:href='https://st4.depositphotos.com/6467562/27652/v/450/depositphotos_276527498-stock-illustration-tartan-plaid-pattern-scottish-cage.jpg' mask='url(#mask-1)' />
+            <image xlink:href='https://st4.depositphotos.com/6467562/27652/v/450/depositphotos_276527498-stock-illustration-tartan-plaid-pattern-scottish-cage.jpg' mask='url(#mask-1)' width="200px"/>
             <path class="st7" d="M121.64,26.19c-31.35-1.88-49.03-1.07-57.6,18.49S58.68,89.95,52.25,99.6s-28.4,23.04-19.83,30.81
 	            s21.43,5.09,29.47-3.75s8.57-46.08,9.64-57.33s68.85-9.91,69.12,2.41s-3.48,38.31-1.61,53.58s12.06,23.31,26.26,24.38
 	            c14.2,1.07,11.25-8.57-2.68-29.47s4.55-33.22-4.82-65.1S121.64,26.19,121.64,26.19z"/>
@@ -197,18 +198,20 @@
         </div>
 
         <div class="inputGroup center">
-            <div class="loginGroup rel">
-                <input type="text" id="email" class="inp h4 block" required>
-                <span class="bar rel block"></span>
-                <label class="abs h4">Email</label>
-
+            <div class="rel left">
+                <input type="text" id="email" class="inp h4 block" autocomplete="off">
+                <label id="lb1" class="lb abs h4">Email</label>
             </div>
-            <div class="loginGroup rel">
-                <input type="text" class="inp h4 block" required>
-                <span class="bar rel block"></span>
-                <label class="abs h4">Password</label>
+            <div class="rel left">
+                <input type="password" id="pass" class="inp h4 block">
+                <label id="lb2" class="lb abs h4">Password</label>
+                <div class="check abs">
+                    <div class="h4 center">
+                        <i class="fas fa-eye-slash"></i>
+                    </div>
+                </div>
             </div>
-            <button class="rel h4">Login</button>
+                <button class="btn h4">Login</button>
         </div>
 
     <div class="svgContainerLegs center">
@@ -288,6 +291,7 @@
 
     </div>
     <div class="helper abs inl-block h4" id="helper"></div>
+    <div class="helper abs inl-block h4" id="helper1"></div>
 
     <script
             src="https://code.jquery.com/jquery-2.2.4.min.js"

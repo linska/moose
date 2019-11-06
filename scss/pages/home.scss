@@ -1,7 +1,11 @@
 @import "../global";
+body{
+  margin: 0;
+}
 
 .hero{
   background-color: $green;
+  max-width: 97%;
 }
 
 .svgContainerMoose{
@@ -13,17 +17,18 @@
   background-color: $white;
   color: $gray;
   border-radius: 3rem;
-  padding: 5rem 1rem 2rem 1rem;
+  padding: 5rem 1rem 2rem 3rem;
   width: 92%;
+ // margin: 0;
 }
 
-.loginGroup {
+.inp{
+  margin-top: 2rem;
   margin-bottom: 1rem;
-  padding: 1rem;
-}
-
-.inp {
-  width: 100%;
+  color: $gray;
+  left: 1rem;
+  top: 1rem;
+  width: calc(100% - 3rem);
   border: none;
   border-bottom: 0.1rem solid $light-gray;
 
@@ -32,47 +37,14 @@
   }
 }
 
-label {
-  color: $gray;
-  pointer-events: none;
-  left: 1rem;
-  top: 1rem;
-  @extend %trnst;
+.lb{
+  top: 0;
+  width: auto;
 }
 
-.inp:focus ~ label, .inp:valid ~ label {
-  top: -1.2rem;
-  font-size: 1.5rem;
-  color: $red;
-}
 
-.bar {
-  width: 100%;
 
-  &:before, &:after {
-    content: "";
-    height: 2px;
-    width: 0;
-    bottom: 0;
-    background: $red;
-    @extend %trnst;
-  }
-
-  &:before {
-    left: 50%;
-  }
-  &:after {
-    right: 50%;
-  }
-}
-
-/* active state */
-input:focus ~ .bar:before,
-input:focus ~ .bar:after {
-  width: 50%;
-}
-
-button{
+.btn{
   width: 70%;
   height: 4rem;
   border: 0.2rem solid $gray;
@@ -81,15 +53,31 @@ button{
   background-color: transparent;
   margin: 1.5rem;
   outline: none;
-}
-
-button:hover{
-  color: $red;
-  border-color: $red;
+  &:hover{
+    color: $red;
+    border-color: $red;
+  }
 }
 
 .svgContainerLegs{
   //background-color: #FFFFFF;
+}
+
+.helper{
+  width: auto;
+  overflow:auto;
+  top: 30.5rem;
+  left: 18rem;
+  visibility: hidden;
+}
+
+.check{
+  width: 3rem;
+  height: 100%;
+//  background-color: $gray;
+  color: $gray;
+  top: 0;
+  right: 0;
 }
 
 @media (min-width: 550px) {
@@ -102,11 +90,4 @@ button:hover{
   .inputGroup{
     width: 35%;
   }
-}
-
-.helper{
-  width: auto;
-  overflow:auto;
-  top: 30.5rem;
-  left: 18rem;
 }
